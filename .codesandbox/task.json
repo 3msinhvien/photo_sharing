@@ -6,7 +6,7 @@
         },
         {
             "name": "Install frontend dependencies",
-            "command": "cd frontend && npm install"
+            "command": "cd photo-sharing-v1 && npm install"
         }
     ],
     "tasks": {
@@ -17,7 +17,7 @@
         },
         "start-frontend": {
             "name": "Start frontend (React)",
-            "command": "cd frontend && PORT=3001 npm start",
+            "command": "cd photo-sharing-v1 && PORT=3001 npm start",
             "runAtStart": true
         }
     }
