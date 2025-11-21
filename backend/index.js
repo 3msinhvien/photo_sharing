@@ -1,7 +1,7 @@
 const express = require('express');
 const cors = require('cors');
 const app = express();
-const port = 8080;
+const port = 3000;
 
 // Không thể require file ES6 module trực tiếp
 // Nên copy logic vào đây hoặc tạo file models mới cho backend

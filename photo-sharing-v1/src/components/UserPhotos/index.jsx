@@ -43,7 +43,7 @@ function UserPhotos () {
           <Card key={photo._id} style={{ marginBottom: "20px" }}>
             <CardMedia
               component="img"
-              image={`http://localhost:8080/images/${photo.file_name}`}
+              image={`http://localhost:3000/images/${photo.file_name}`}
               alt="User photo"
               style={{ maxHeight: "500px", objectFit: "contain" }}
             />
