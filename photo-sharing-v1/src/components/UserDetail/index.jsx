@@ -41,14 +41,14 @@ function UserDetail() {
                 <Typography color="textSecondary">
                     Occupation: {user.occupation}
                 </Typography>
-                                    <Button 
-                        variant="contained" 
-                        color="primary" 
-                        component={Link} 
-                        to={`/photos/${userId}`}
-                    >
-                        View Photos
-                    </Button>
+                <Button
+                    variant="contained"
+                    color="primary"
+                    component={Link}
+                    to={`/photos/${userId}`}
+                >
+                    View Photos
+                </Button>
             </CardContent>
         </Card>
     );

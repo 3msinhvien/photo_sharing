@@ -1,8 +1,12 @@
 {
     "setupTasks": [
         {
-            "name": "Install dependencies",
-            "command": "npm install"
+            "name": "Install backend dependencies",
+            "command": "cd backend && npm install"
+        },
+        {
+            "name": "Install frontend dependencies",
+            "command": "cd photo-sharing-v1 && npm install"
         }
     ],
     "tasks": {
