@@ -1,0 +1,24 @@
+{
+    "setupTasks": [
+        {
+            "name": "Install backend dependencies",
+            "command": "cd backend && npm install"
+        },
+        {
+            "name": "Install frontend dependencies",
+            "command": "cd photo-sharing-v1 && npm install"
+        }
+    ],
+    "tasks": {
+        "start-backend": {
+            "name": "Start backend (Express)",
+            "command": "cd backend && node index.js",
+            "runAtStart": true
+        },
+        "start-frontend": {
+            "name": "Start frontend (React)",
+            "command": "cd photo-sharing-v1 && set PORT=3001 && npm start",
+            "runAtStart": true
+        }
+    }
+}
