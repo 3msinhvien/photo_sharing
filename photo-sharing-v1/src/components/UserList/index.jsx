@@ -20,7 +20,7 @@ function UserList() {
   const [users, setUsers] = useState([]);
 
   useEffect(() => {
-    fetchModel("http://localhost:3000/user/list")
+    fetchModel("http://localhost:8081/api/user/list")
       .then((data) => {
         setUsers(data);
       })

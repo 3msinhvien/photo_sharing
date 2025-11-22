@@ -9,7 +9,7 @@ function UserPhotos() {
   const [photos, setPhotos] = useState([]);
 
   useEffect(() => {
-    fetchModel(`http://localhost:3000/photosOfUser/${userId}`)
+    fetchModel(`http://localhost:8081/api/photo/photosOfUser/${userId}`)
       .then((data) => {
         console.log('Photos data:', data); // Debug log
         setPhotos(data);
@@ -43,7 +43,7 @@ function UserPhotos() {
         <Card key={photo._id} style={{ marginBottom: "20px" }}>
           <CardMedia
             component="img"
-            image={`http://localhost:3000/images/${photo.file_name}`}
+            image={`/images/${photo.file_name}`}  // Thay vì http://localhost:8081/api/images/
             alt="User photo"
             style={{ maxHeight: "500px", objectFit: "contain" }}
           />
