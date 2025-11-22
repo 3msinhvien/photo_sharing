@@ -1,15 +1,21 @@
 {
-    "setupTasks": [
-        {
-            "name": "Install dependencies",
-            "command": "cd photo-sharing-v1 && npm install"
-        }
-    ],
-    "tasks": {
-        "start": {
-            "name": "Start application",
-            "command": "cd photo-sharing-v1 && npm start",
-            "runAtStart": true
-        }
+  // These tasks will run in order when initializing your CodeSandbox project.
+  "setupTasks": [
+    {
+      "command": "cd photo-sharing-v1 && npm install",
+      "name": "Install dependencies"
     }
+  ],
+
+  // These tasks can be run from CodeSandbox. Running one will open a log in the app.
+  "tasks": {
+    "start": {
+      "name": "Start application",
+      "command": "cd photo-sharing-v1 && npm start",
+      "runAtStart": true,
+      "preview": {
+        "port": 3000
+      }
+    }
+  }
 }
